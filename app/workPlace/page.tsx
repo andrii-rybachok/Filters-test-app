@@ -190,7 +190,13 @@ export default function WorkPlaces({ workPlaces }: { workPlaces: WorkPlace[] }) 
                </div>
 
                <div>
-                  <input type="search" name="jobId" onChange={handleChange} value={workPlaceSearch.jobId} />
+                  <input
+                     type="search"
+                     name="jobId"
+                     onChange={handleChange}
+                     pattern="[0-9]*"
+                     value={workPlaceSearch.jobId}
+                  />
                   <div className={styles.filterBtns}>
                      <input type="submit" value="search by job id" />
                      <input
