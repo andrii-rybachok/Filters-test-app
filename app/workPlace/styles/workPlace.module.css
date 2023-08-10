@@ -1,0 +1,30 @@
+
+.workPlaces{
+    display: flex;
+}
+
+.filters{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    gap: 30px;
+}
+.filterBtns{
+    display: flex;
+    gap: 10px;
+    margin:5px 0;
+}
+
+
+
+.removeFilterBtn{
+    background-color: transparent;
+    height: 25px;
+    border: 1px solid red;
+    transition: 0.2s ease-out;
+}
+.removeFilterBtn:hover{
+    background-color: red;
+    cursor: pointer;
+    color: white;
+}
